@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.reputasi.callblocker.view.custom.ReputasiTextView
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        custom:fontType="robotoRegular"
+        android:textColor="@color/white"
+        android:text="@string/registration_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"/>
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_number_input"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_box">
+            <ImageView
+                android:id="@+id/btn_number_base"
+                android:padding="4dp"
+                android:src="@drawable/number_base"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.reputasi.callblocker.view.custom.ReputasiEditText
+                android:id="@+id/edt_input_number"
+                android:background="@null"
+                android:layout_marginLeft="3dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:inputType="number"
+                android:hint="Phone Number"
+                custom:fontType="robotoRegular"
+                android:textSize="13sp"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/btn_number_next"
+                android:scaleType="fitXY"
+                android:padding="0dp"
+                android:background="@drawable/selector_registrationnumber_next"
+                android:layout_width="40dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <com.reputasi.callblocker.view.custom.ReputasiTextView
+            android:layout_centerVertical="true"
+            android:paddingLeft="7dp"
+            android:text="ID +62"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            custom:fontType="robotoRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</LinearLayout>

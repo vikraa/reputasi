@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparant_color">
+
+    <RelativeLayout
+        android:id="@+id/rl_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_pager_height">
+        <View
+            android:layout_marginTop="@dimen/tab_pager_indicator_line_spacing"
+            android:id="@+id/vw_indicator_normal"
+            android:background="@color/indicator_normal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_indicator_normal_height"/>
+        <LinearLayout
+            android:id="@+id/ll_tab_indicator"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@color/transparant_color"
+            android:layout_height="45dp">
+            <RelativeLayout
+                android:id="@+id/rl_tab_1"
+                android:background="@null"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.reputasi.callblocker.view.custom.ReputasiTextView
+                    custom:fontType="robotoRegular"
+                    android:textColor="@android:color/white"
+                    android:background="@null"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="TAB 1"
+                    android:id="@+id/tab_title_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <View
+                    android:id="@+id/vw_indicator_selected_1"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/indicator_selected"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_indicator_selected_height"
+                    android:visibility="gone"/>
+                <!--<View
+                    android:id="@+id/vw_indicator_normal_1"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/indicator_normal"
+                    android:layout_width="match_parent"
+                    android:visibility="visible"
+                    android:layout_height="@dimen/tab_indicator_normal_height"/>-->
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="@dimen/tab_sparator_height_spacing"
+                android:layout_marginBottom="@dimen/tab_sparator_height_spacing"
+                android:background="@color/indicator_normal"
+                android:id="@+id/vw_sparator_1"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+            <RelativeLayout
+                android:id="@+id/rl_tab_2"
+                android:background="@color/transparant_color"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.reputasi.callblocker.view.custom.ReputasiTextView
+                    custom:fontType="robotoRegular"
+                    android:textColor="@android:color/white"
+                    android:padding="2dp"
+                    android:layout_weight="1"
+                    android:text="TAB 2"
+                    android:background="@color/transparant_color"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/tab_title_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <View
+                    android:id="@+id/vw_indicator_selected_2"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/indicator_selected"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_indicator_selected_height"
+                    android:visibility="gone"/>
+                <!--<View
+                    android:id="@+id/vw_indicator_normal_2"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/indicator_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_indicator_normal_height"/>-->
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="@dimen/tab_sparator_height_spacing"
+                android:layout_marginBottom="@dimen/tab_sparator_height_spacing"
+                android:background="@color/indicator_normal"
+                android:id="@+id/vw_sparator_2"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+            <RelativeLayout
+                android:id="@+id/rl_tab_3"
+                android:background="@color/transparant_color"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.reputasi.callblocker.view.custom.ReputasiTextView
+                    custom:fontType="robotoRegular"
+                    android:textColor="@android:color/white"
+                    android:padding="2dp"
+                    android:layout_weight="1"
+                    android:text="TAB 3"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/tab_title_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <View
+                    android:id="@+id/vw_indicator_selected_3"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/indicator_selected"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_indicator_selected_height"
+                    android:visibility="gone"/>
+               <!-- <View
+                    android:id="@+id/vw_indicator_normal_3"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/indicator_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_indicator_normal_height"/>-->
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="@dimen/tab_sparator_height_spacing"
+                android:layout_marginBottom="@dimen/tab_sparator_height_spacing"
+                android:background="@color/indicator_normal"
+                android:id="@+id/vw_sparator_3"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+            <RelativeLayout
+                android:id="@+id/rl_tab_4"
+                android:background="@color/transparant_color"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.reputasi.callblocker.view.custom.ReputasiTextView
+                    custom:fontType="robotoRegular"
+                    android:textColor="@android:color/white"
+                    android:padding="2dp"
+                    android:layout_weight="1"
+                    android:text="TAB 3"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/tab_title_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <View
+                    android:padding="2dp"
+                    android:id="@+id/vw_indicator_selected_4"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/indicator_selected"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_indicator_selected_height"
+                    android:visibility="gone"/>
+                <!--<View
+                    android:id="@+id/vw_indicator_normal_4"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/indicator_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_indicator_normal_height"/>-->
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.reputasi.callblocker.view.custom.ReputasiViewPager
+        android:layout_below="@+id/rl_tab_bar"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ActionbarTabs" >
+
+    </com.reputasi.callblocker.view.custom.ReputasiViewPager>
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:padding="10dp"
+    android:background="@drawable/selector_listview">
+
+    <ImageView
+        android:id="@+id/iv_row_icon"
+        android:padding="@dimen/common_row_screen_icon_spacing"
+        android:src="@drawable/icon_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:paddingLeft="@dimen/common_row_screen_text_spacing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.reputasi.callblocker.view.custom.ReputasiTextView
+            android:id="@+id/tv_row_title"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="Option"
+            custom:fontType="robotoRegular"
+            android:textSize="@dimen/row_textsize"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <!--<View
+            android:id="@+id/iv_sparator"
+            android:layout_alignParentBottom="true"
+            android:background="@color/indicator_normal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>-->
+    </RelativeLayout>
+</LinearLayout>

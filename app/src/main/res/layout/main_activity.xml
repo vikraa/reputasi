@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_screen">
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:background="@null"
+        android:layout_height="match_parent"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/indicator_normal"/>
+    <LinearLayout
+        android:background="@color/transparant_color"
+        android:id="@+id/tab_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/paging_tab_space"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:stateListAnimator="@null"
+            android:background="@drawable/selector_tab_block"
+            android:id="@+id/tab_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="13sp"
+        />
+        <!--android:background="@drawable/selector_tabblock"-->
+        <Button
+            android:stateListAnimator="@null"
+            android:background="@drawable/selector_tab_contribute"
+            android:id="@+id/tab_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="13sp"
+        />
+        <!--android:background="@drawable/selector_tabcontribute"-->
+
+        <Button
+            android:stateListAnimator="@null"
+            android:background="@drawable/selector_tab_search"
+            android:id="@+id/tab_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            />
+        <!--android:background="@drawable/selector_tabsearch"-->
+        <!--<View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#dddddd"/>-->
+
+
+        <!-- <View
+             android:layout_width="1px"
+             android:layout_height="match_parent"
+             android:background="#dddddd"/>-->
+
+        <!--<Button
+            android:stateListAnimator="@null"
+            android:background="@drawable/selector_tab_discover"
+            android:id="@+id/tab_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            />-->
+        <!--android:background="@drawable/selector_tabdiscover"-->
+        <!--<View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#dddddd"/>-->
+
+        <!--<View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#dddddd"/>-->
+
+        <Button
+            android:stateListAnimator="@null"
+            android:background="@drawable/selector_tab_account"
+            android:id="@+id/tab_5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            />
+            <!--android:background="@drawable/selector_tabaccount"-->
+    </LinearLayout>
+</LinearLayout>

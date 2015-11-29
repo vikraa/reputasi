@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facebook/facebook.iml" filepath="$PROJECT_DIR$/facebook/facebook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reputasi.iml" filepath="$PROJECT_DIR$/reputasi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reputasilibrary/reputasilibrary.iml" filepath="$PROJECT_DIR$/reputasilibrary/reputasilibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/snslibrary/snslibrary.iml" filepath="$PROJECT_DIR$/snslibrary/snslibrary.iml" />
+    </modules>
+  </component>
+</project>

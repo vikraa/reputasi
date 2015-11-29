@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="android:alertDialogTheme">@style/customAlertdialog</item>-->
+    </style>
+
+    <!-- custom tabbar title text -->
+    <style name="customTabbarTitleTextBold">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="customTabbarTitleTextNormal">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="TransparantTheme" parent="android:Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <!-- dialog -->
+    <!--<style name="customAlertdialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+        <item name="android:alertDialogStyle">@style/customAlertDialogStyle</item>
+        <item name="android:textAppearanceLarge">@style/customTextAppearance</item>
+        <item name="android:textAppearanceMedium">@style/customTextAppearanceMedium</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="customTextAppearance" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/base_font_color</item>
+        <item name="android:layout_marginTop">3dip</item>
+        <item name="android:layout_marginBottom">4dip</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="customTextAppearanceMedium" parent="@android:style/TextAppearance.Medium">
+        <item name="android:minHeight">35dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="customAlertDialogStyle">
+        <item name="android:textColor">@color/base_font_color</item>
+        <item name="android:fullDark">@color/base_font_color</item>
+        <item name="android:topDark">@color/indicator_selected</item>
+        <item name="android:centerDark">@color/base_font_color</item>
+        <item name="android:fullBright">@color/base_font_color</item>
+        <item name="android:topBright">@color/base_font_color</item>
+        <item name="android:centerBright">@color/base_font_color</item>
+        <item name="android:bottomDark">@color/indicator_selected</item>
+        <item name="android:bottomBright">@color/indicator_selected</item>
+        <item name="android:bottomMedium">@color/base_font_color</item>
+        <item name="android:centerMedium">@color/base_font_color</item>
+    </style>-->
+
+</resources>

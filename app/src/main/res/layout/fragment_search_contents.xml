@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/transparant_color">
+    <ImageView
+        android:layout_marginTop="@dimen/logo_spacing"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iv_reputasi_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_margin="@dimen/input_content_spacing"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@drawable/search_box"
+            android:layout_height="wrap_content">
+            <com.reputasi.callblocker.view.custom.ReputasiEditText
+                android:id="@+id/edt_search"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:singleLine="true"
+                android:padding="@dimen/input_edittext_spacing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/search_number_hint"
+                android:background="@null"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/darker_gray"
+                custom:fontType="robotoRegular"/>
+            <ImageView
+                android:scaleType="fitCenter"
+                android:src="@drawable/search_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_history"
+            android:layout_marginTop="@dimen/edittext_container_spacing"
+            android:background="@drawable/rectangle_input_login"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--<ListView
+                android:id="@+id/lv_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>-->
+            <include
+                android:id="@+id/history1"
+                layout="@layout/row_search"/>
+            <!--<View
+                android:layout_marginLeft="@dimen/line_sparator_left_spacing"
+                android:layout_marginRight="@dimen/line_sparator_right_spacing"
+                android:background="@android:color/darker_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>-->
+            <include
+                android:id="@+id/history2"
+                layout="@layout/row_search"/>
+            <!--<View
+                android:layout_marginLeft="@dimen/line_sparator_left_spacing"
+                android:layout_marginRight="@dimen/line_sparator_right_spacing"
+                android:background="@android:color/darker_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>-->
+            <include
+                android:id="@+id/history3"
+                layout="@layout/row_search"/>
+         </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

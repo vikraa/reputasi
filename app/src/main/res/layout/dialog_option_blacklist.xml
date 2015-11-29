@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/bg_screen_top"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/blacklist_dialog_bg_height" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="@dimen/blacklist_dialog_row_title_spacing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.reputasi.callblocker.view.custom.ReputasiTextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/white"
+                android:text="Option Name"
+                custom:fontType="robotoBold"
+                android:textSize="@dimen/blacklist_dialog_row_title_textsize" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/custom_dialog_sparator_height"
+            android:background="@color/indicator_selected"/>
+        <include
+            android:id="@+id/option_menu_1"
+            layout="@layout/adapter_blacklist_popup" />
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/indicator_normal"/>
+        <include
+            android:id="@+id/option_menu_2"
+            layout="@layout/adapter_blacklist_popup"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/indicator_normal"/>
+        <include
+            android:id="@+id/option_menu_3"
+            layout="@layout/adapter_blacklist_popup"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/indicator_normal"/>
+        <include
+            android:id="@+id/option_menu_4"
+            layout="@layout/adapter_blacklist_popup"/>-->
+    </LinearLayout>
+</RelativeLayout>

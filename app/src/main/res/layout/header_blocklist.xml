@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:padding="@dimen/blacklist_header_spacing"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/plus_transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.reputasi.callblocker.view.custom.ReputasiTextView
+            android:paddingLeft="@dimen/blacklist_row_spacing"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            custom:fontType="robotoBold"
+            android:text="@string/block_add_new_list"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>

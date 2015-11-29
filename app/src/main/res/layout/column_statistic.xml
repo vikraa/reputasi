@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.reputasi.callblocker.view.custom.ReputasiTextView
+        android:gravity="center"
+        android:id="@+id/tv_chart_title"
+        android:text="chart title"
+        custom:fontType="robotoBold"
+        android:textSize="@dimen/spammer_title_back_textsize"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/ll_chart"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"/>
+    <include
+        android:id="@+id/vw_row_legend_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/row_statistic"/>
+    <include
+        android:id="@+id/vw_row_legend_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/row_statistic"/>
+    <ListView
+        android:divider="@null"
+        android:id="@+id/lv_chart_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:paddingTop="@dimen/adapter_category_row_spacing"
+    android:paddingBottom="@dimen/adapter_category_row_spacing"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.reputasi.callblocker.view.custom.ReputasiTextView
+                android:id="@+id/tv_category_title"
+                android:layout_width="match_parent"
+                custom:fontType="robotoBold"
+                android:textSize="@dimen/adapter_category_row_title_textsize"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+            <com.reputasi.callblocker.view.custom.ReputasiTextView
+                android:id="@+id/tv_category_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                custom:fontType="robotoRegular"
+                android:textSize="12sp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+        <Switch
+            android:paddingTop="@dimen/adapter_category_row_switch_spacing"
+            android:id="@+id/sw_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            />
+    </RelativeLayout>
+</LinearLayout>

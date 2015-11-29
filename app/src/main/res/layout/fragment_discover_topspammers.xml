@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_listspammer"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+        <LinearLayout
+            android:id="@+id/ll_spamer_refresh"
+            android:paddingTop="@dimen/spammer_layout_spacing"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_listview">
+            <ImageButton
+                android:layout_margin="@dimen/spammer_refresh_icon_spacing"
+                android:background="@drawable/refresh_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_marginRight="@dimen/spammer_layout_spacing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.reputasi.callblocker.view.custom.ReputasiTextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_title"
+                    android:text="Top spammers in your area"
+                    custom:fontType="robotoBold"
+                    android:textSize="@dimen/spammer_title_back_textsize"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <ListView
+            android:listSelector="@drawable/selector_listview"
+            android:layout_marginLeft="@dimen/spammer_list_left_spacing"
+            android:layout_marginRight="@dimen/spammer_list_right_spacing"
+            android:divider="@null"
+            android:id="@+id/lv_spammers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/ll_spammer_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <LinearLayout
+            android:id="@+id/ll_spammer_detail_back"
+            android:paddingTop="@dimen/spammer_layout_spacing"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_listview">
+            <ImageButton
+                android:layout_margin="@dimen/spammer_refresh_icon_spacing"
+                android:background="@drawable/arrow_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_marginRight="@dimen/spammer_layout_spacing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.reputasi.callblocker.view.custom.ReputasiTextView
+                    android:gravity="center"
+                    android:id="@+id/tv_spammer_detail_name"
+                    android:text="Spammer name"
+                    custom:fontType="robotoBold"
+                    android:textSize="@dimen/spammer_title_back_textsize"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spammer_detail_layout_info_spacing"
+            android:layout_marginBottom="@dimen/spammer_detail_layout_info_spacing"
+            >
+            <com.reputasi.callblocker.view.custom.ReputasiTextView
+                android:id="@+id/tv_detail_name"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/spammer_detail_info_title_textsize"
+                custom:fontType="robotoBold"
+                android:textColor="@color/white"
+                android:text="Telemarketing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.reputasi.callblocker.view.custom.ReputasiTextView
+                android:id="@+id/tv_detail_score"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/spammer_detail_info_score_textsize"
+                custom:fontType="robotoBold"
+                android:textColor="@color/button_signup_color"
+                android:text="35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.reputasi.callblocker.view.custom.ReputasiTextView
+                android:id="@+id/tv_detail_info_title"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/spammer_detail_info_score_title_textsize"
+                android:textColor="@color/white"
+                android:text="reputasi score"
+                custom:fontType="robotoBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.reputasi.callblocker.view.custom.ReputasiTextView
+                android:id="@+id/tv_detail_info"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/spammer_detail_left_sparator_spacing"
+                android:layout_marginRight="@dimen/spammer_detail_right_sparator_spacing"
+                android:textSize="@dimen/spammer_detail_info_common_textsize"
+                custom:fontType="robotoRegular"
+                android:textColor="@color/white"
+                android:text="lower score means calls from this number are more\nlikely to be spam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.reputasi.callblocker.view.custom.ReputasiTextView
+                android:layout_marginTop="@dimen/spammer_detail_info_top_spacing"
+                android:layout_marginLeft="@dimen/spammer_detail_info_left_spacing"
+                android:layout_marginBottom="@dimen/spammer_detail_info_bottom_spacing"
+                android:text="+6287880820196"
+                android:textColor="@color/white"
+                android:textSize="@dimen/spammer_detail_info_common_textsize"
+                custom:fontType="robotoRegular"
+                android:id="@+id/tv_detail_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginLeft="@dimen/spammer_detail_left_sparator_spacing"
+                android:layout_marginRight="@dimen/spammer_detail_right_sparator_spacing"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+            <com.reputasi.callblocker.view.custom.ReputasiTextView
+                android:layout_marginTop="@dimen/spammer_detail_info_top_spacing"
+                android:layout_marginLeft="@dimen/spammer_detail_info_left_spacing"
+                android:layout_marginBottom="@dimen/spammer_detail_info_bottom_spacing"
+                android:text="Call"
+                android:textColor="@color/white"
+                android:textSize="@dimen/spammer_detail_info_common_textsize"
+                custom:fontType="robotoRegular"
+                android:id="@+id/tv_detail_call"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginLeft="@dimen/spammer_detail_left_sparator_spacing"
+                android:layout_marginRight="@dimen/spammer_detail_right_sparator_spacing"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+            <com.reputasi.callblocker.view.custom.ReputasiTextView
+                android:layout_marginTop="@dimen/spammer_detail_info_top_spacing"
+                android:layout_marginLeft="@dimen/spammer_detail_info_left_spacing"
+                android:layout_marginBottom="@dimen/spammer_detail_info_bottom_spacing"
+                android:text="Send Message"
+                android:textColor="@color/white"
+                android:textSize="@dimen/spammer_detail_info_common_textsize"
+                custom:fontType="robotoRegular"
+                android:id="@+id/tv_detail_send_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginLeft="@dimen/spammer_detail_left_sparator_spacing"
+                android:layout_marginRight="@dimen/spammer_detail_right_sparator_spacing"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+            <com.reputasi.callblocker.view.custom.ReputasiTextView
+                android:layout_marginTop="@dimen/spammer_detail_info_top_spacing"
+                android:layout_marginLeft="@dimen/spammer_detail_info_left_spacing"
+                android:layout_marginBottom="@dimen/spammer_detail_info_bottom_spacing"
+                android:text="Include in my personal blacklist"
+                android:textColor="@color/white"
+                android:textSize="@dimen/spammer_detail_info_common_textsize"
+                custom:fontType="robotoRegular"
+                android:id="@+id/tv_detail_include_blacklist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

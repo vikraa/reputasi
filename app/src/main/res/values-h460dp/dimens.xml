@@ -1,0 +1,115 @@
+<resources>
+
+    <!-- main activity -->
+    <dimen name="paging_tab_space">48dp</dimen>
+
+    <!-- tab pager -->
+    <dimen name="tab_pager_height">45dp</dimen>
+    <dimen name="tab_pager_indicator_line_spacing">43dp</dimen>
+
+    <!-- login activity -->
+    <dimen name="sns_button_spacing">10dp</dimen>
+    <dimen name="tab_sparator_height_spacing">10dp</dimen>
+    <dimen name="input_spacing">50dp</dimen>
+    <dimen name="input_spacing_side">20dp</dimen>
+    <dimen name="input_spacing_bottom">15dp</dimen>
+    <dimen name="icon_spacing">10dp</dimen>
+    <dimen name="input_edittext_spacing">8dp</dimen>
+    <dimen name="font_edittext_size">14sp</dimen>
+    <dimen name="signup_button_height">40dp</dimen>
+    <dimen name="signup_button_width">100dp</dimen>
+
+    <!-- search fragments -->
+    <dimen name="input_content_spacing">25dp</dimen>
+    <dimen name="logo_spacing">30dp</dimen>
+    <dimen name="edittext_container_spacing">10dp</dimen>
+    <dimen name="icon_search_spacing">10dp</dimen>
+    <dimen name="line_sparator_left_spacing">50dp</dimen>
+    <dimen name="line_sparator_right_spacing">20dp</dimen>
+    <dimen name="row_search_textsize">12sp</dimen>
+
+    <!-- block adapter -->
+    <dimen name="icon_arrow_spacing">60dp</dimen>
+
+    <!-- blacklist fragment -->
+    <dimen name="blackist_listview_spacing">35dp</dimen>
+    <dimen name="blacklist_header_spacing">10dp</dimen>
+    <dimen name="blacklist_row_spacing">5dp</dimen>
+    <dimen name="adapter_row_text_spacing">2dp</dimen>
+    <dimen name="adapter_row_text_title_textsize">15sp</dimen>
+    <dimen name="adapter_row_text_values_textsize">13sp</dimen>
+    <dimen name="adapter_row_icon_spacing">5dp</dimen>
+    <dimen name="adapter_category_row_spacing">5dp</dimen>
+    <dimen name="adapter_category_row_title_textsize">15sp</dimen>
+    <dimen name="adapter_category_row_switch_spacing">7dp</dimen>
+    <dimen name="adapter_category_name_spacing">30dp</dimen>
+
+    <!-- blacklist dialog -->
+    <dimen name="blacklist_dialog_bg_height">135dp</dimen>
+    <dimen name="blacklist_dialog_row_title_spacing">20dp</dimen>
+    <dimen name="blacklist_dialog_row_title_textsize">18sp</dimen>
+    <dimen name="row_blacklist_spacing">10dp</dimen>
+    <dimen name="row_blacklist_icon_spacing">5dp</dimen>
+    <dimen name="row_blacklist_textsize">16sp</dimen>
+    <dimen name="blacklist_add_new_background_height">180dp</dimen>
+
+    <!-- contribute dialog -->
+    <dimen name="contribute_dialog_spacing">20dp</dimen>
+    <dimen name="contribute_textview_spacing">5dp</dimen>
+    <dimen name="contribute_dialog_textsize_title">15sp</dimen>
+    <dimen name="contribute_dialog_height">335dp</dimen>
+    <dimen name="contribute_dialog_spinner_item_spacing">5dp</dimen>
+    <dimen name="contribute_dialog_button_spacing">5dp</dimen>
+    <dimen name="contribute_dialog_popup_title">18sp</dimen>
+
+    <!-- contribute fragment -->
+    <dimen name="description_contribute_textsize">13sp</dimen>
+    <dimen name="contribute_frame_spacing">20dp</dimen>
+    <dimen name="contribute_icon_frame_spacing">40dp</dimen>
+    <dimen name="sparator_spacing_left">60dp</dimen>
+    <dimen name="sparator_spacing_right">60dp</dimen>
+
+    <!-- contribute row -->
+    <dimen name="row_contribute_spacing">10dp</dimen>
+    <dimen name="row_icon_spacing">5dp</dimen>
+    <dimen name="row_text_spacing">20dp</dimen>
+    <dimen name="row_textsize">12sp</dimen>
+
+    <!-- discover top spammers -->
+    <dimen name="spammer_initial_icon_spacing">5dp</dimen>
+    <dimen name="spammer_initial_textsize">12sp</dimen>
+    <dimen name="spammer_name_textsize">15sp</dimen>
+    <dimen name="spammer_number_textsize">12sp</dimen>
+    <dimen name="spammer_categoryname_spacing">20dp</dimen>
+    <dimen name="spammer_categoryname_textsize">12sp</dimen>
+    <dimen name="spammer_arrow_icon_spacing">10dp</dimen>
+
+    <dimen name="spammer_refresh_icon_spacing">10dp</dimen>
+    <dimen name="spammer_layout_spacing">10dp</dimen>
+    <dimen name="spammer_title_back_textsize">15sp</dimen>
+    <dimen name="spammer_list_left_spacing">40dp</dimen>
+    <dimen name="spammer_list_right_spacing">10dp</dimen>
+    <dimen name="spammer_detail_info_top_spacing">10dp</dimen>
+    <dimen name="spammer_detail_info_left_spacing">15dp</dimen>
+    <dimen name="spammer_detail_info_bottom_spacing">10dp</dimen>
+    <dimen name="spammer_detail_layout_icon_spacing">10dp</dimen>
+    <dimen name="spammer_detail_title_textsize">15sp</dimen>
+    <dimen name="spammer_detail_layout_info_spacing">20dp</dimen>
+    <dimen name="spammer_detail_info_title_textsize">20sp</dimen>
+    <dimen name="spammer_detail_info_score_textsize">40sp</dimen>
+    <dimen name="spammer_detail_info_score_title_textsize">15sp</dimen>
+    <dimen name="spammer_detail_info_common_textsize">13sp</dimen>
+    <dimen name="spammer_detail_left_sparator_spacing">20dp</dimen>
+    <dimen name="spammer_detail_right_sparator_spacing">20dp</dimen>
+
+    <!-- incoming call card -->
+    <dimen name="incoming_call_score_title_textsize">10dp</dimen>
+    <dimen name="incoming_call_score_title_spacing">10dp</dimen>
+    <dimen name="incoming_call_layout_circle_spacing">8dp</dimen>
+    <dimen name="incoming_call_text_score_textsize">20dp</dimen>
+    <dimen name="incoming_call_text_number_name_textsize">18dp</dimen>
+    <dimen name="incoming_call_text_title_name_textsize">12dp</dimen>
+    <dimen name="incoming_call_thumbs_icon_spacing">2dp</dimen>
+    <dimen name="incoming_call_text_icon_spacing">5dp</dimen>
+
+</resources>

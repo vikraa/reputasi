@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_listview">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_info"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.reputasi.callblocker.view.custom.ReputasiTextView
+                android:padding="@dimen/adapter_row_text_spacing"
+                android:id="@+id/tv_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                custom:fontType="robotoBold"
+                android:textSize="@dimen/adapter_row_text_title_textsize"
+                android:textColor="@android:color/white"
+                android:text="+6287880820196"/>
+            <com.reputasi.callblocker.view.custom.ReputasiTextView
+                android:padding="@dimen/adapter_row_text_spacing"
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                custom:fontType="robotoRegular"
+                android:textSize="@dimen/adapter_row_text_values_textsize"
+                android:textColor="@android:color/white"
+                android:text="Teman ABC"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.reputasi.callblocker.view.custom.ReputasiTextView
+                android:gravity="right"
+                android:layout_marginRight="@dimen/adapter_category_name_spacing"
+                android:id="@+id/tv_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                custom:fontType="robotoRegular"
+                android:textSize="@dimen/adapter_row_text_values_textsize"
+                android:textColor="@android:color/white"
+                android:text="category"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/adapter_row_icon_spacing"
+            android:src="@drawable/arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

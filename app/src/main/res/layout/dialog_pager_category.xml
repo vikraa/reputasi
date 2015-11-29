@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/contribute_dialog_spacing">
+    <com.reputasi.callblocker.view.custom.ReputasiTextView
+        android:paddingTop="@dimen/contribute_textview_spacing"
+        android:paddingBottom="@dimen/contribute_textview_spacing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/dialog_title_category"
+        custom:fontType="robotoBold"
+        android:textSize="@dimen/contribute_dialog_textsize_title"/>
+    <Spinner
+        android:id="@+id/spinner_category"
+        android:background="@drawable/rectangle_edittext_bg_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.reputasi.callblocker.view.custom.ReputasiTextView
+        android:paddingTop="@dimen/contribute_textview_spacing"
+        android:paddingBottom="@dimen/contribute_textview_spacing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/dialog_title_note"
+        custom:fontType="robotoBold"
+        android:textSize="@dimen/contribute_dialog_textsize_title"/>
+    <com.reputasi.callblocker.view.custom.ReputasiEditText
+        android:id="@+id/edt_note"
+        android:lines="3"
+        android:maxLines="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_edittext_bg_white"/>
+    <LinearLayout
+        android:paddingTop="@dimen/contribute_textview_spacing"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_skip"
+            android:background="@null"
+            android:text="Skip"
+            android:textColor="@color/indicator_selected"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_submit"
+            android:background="@null"
+            android:text="Submit"
+            android:textColor="@color/indicator_selected"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

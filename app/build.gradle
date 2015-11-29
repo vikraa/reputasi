@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://repository-achartengine.forge.cloudbees.com/snapshot/"
+    }
+}
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'reputasi'
+            keyPassword 'r3put4s1'
+            storeFile file('reputasi.keystore')
+            storePassword 'r3put4s1'
+        }
+    }
+    compileSdkVersion 21
+    buildToolsVersion '22.0.1'
+    defaultConfig {
+        applicationId "com.reputasi.callblocker"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 100004
+        versionName '1.0.1'
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            def time = getDateTime();
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+            applicationVariants.all { variant ->
+                def versionName = "v"+defaultConfig.versionName
+                def versionCode = variant.versionCode
+                def variants = variant.baseName.replace('-', '_');
+                def apkName = "Reputasi";
+                apkName += "_" + versionName;
+                apkName += "_" + versionCode;
+                //apkName += "_" + time;
+                apkName += "_" + variants;
+
+                variant.outputs.each { output ->
+                    if (variant.buildType.zipAlignEnabled) {
+                        output.outputFile = file("$project.buildDir/outputs/apk/" + apkName + ".apk");
+                    }
+                    output.packageApplication.outputFile = file("$project.buildDir/outputs/apk/" + apkName + "_unaligned.apk");
+                }
+            }
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
+    }
+}
+
+def getDateTime() {
+    def date = new Date()
+    def formattedDate = date.format('yyyyMMdd_HHmm')
+    return formattedDate
+}
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:support-v13:22.1.1'
+    /*compile 'org.achartengine:achartengine:1.2.0'
+                    compile 'com.google.code.gson:gson:2.2.4'
+                    compile 'com.google.android.gms:play-services:6.1.71'
+                    compile 'com.squareup.retrofit:retrofit:1.7.1'
+                    compile 'com.squareup.okhttp:okhttp:2.1.0-RC1'
+                    compile 'com.squareup.okhttp:okhttp-urlconnection:2.1.0-RC1'
+                    compile 'com.googlecode.libphonenumber:libphonenumber:7.0.4'*/
+    compile project(':facebook')
+    compile project(':snslibrary')
+    compile project(':reputasilibrary')
+}

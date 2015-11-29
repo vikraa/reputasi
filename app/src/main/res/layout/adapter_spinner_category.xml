@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.reputasi.callblocker.view.custom.ReputasiTextView
+    android:padding="@dimen/contribute_dialog_spinner_item_spacing"
+    android:id="@+id/tv_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    custom:fontType="robotoRegular"
+    android:textSize="14sp"
+    android:textColor="@android:color/black"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

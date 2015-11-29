@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/bg_screen_top"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/blacklist_add_new_background_height" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.reputasi.callblocker.view.custom.ReputasiTextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/white"
+                android:text="Option Name"
+                custom:fontType="robotoBold"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/indicator_selected"/>
+        <include
+            android:id="@+id/option_menu_1"
+            layout="@layout/adapter_blacklist_addnew" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/indicator_normal"/>
+        <include
+            android:id="@+id/option_menu_2"
+            layout="@layout/adapter_blacklist_addnew"/>
+    </LinearLayout>
+</RelativeLayout>

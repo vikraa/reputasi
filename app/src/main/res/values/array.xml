@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="account_tab">
+        <item>Reputasi</item>
+        <!--<item>Profile</item>-->
+    </string-array>
+    <string-array name="block_tab">
+        <item>Blacklist</item>
+        <item>Category</item>
+    </string-array>
+    <string-array name="discover_tab">
+        <!--<item>Featured</item>-->
+        <item>Top Spammers</item>
+        <item>Statistics</item>
+    </string-array>
+    <string-array name="contribute_tab">
+        <item>Contribute</item>
+    </string-array>
+    <string-array name="search_tab">
+        <item>Search Number</item>
+    </string-array>
+    <string-array name="blacklist_popup">
+        <item>Remove</item>
+        <item>Number Description</item>
+        <item>Database Category Field</item>
+        <item>Report Number</item>
+    </string-array>
+    <string-array name="blacklist_add_options">
+        <item>From phone book</item>
+        <item>From call log</item>
+    </string-array>
+    <string-array name="contribute_option">
+        <item>Submit number</item>
+        <item>Submit from recent calls</item>
+        <item>Submit from phone book</item>
+    </string-array>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Reputa.si</string>
+    <string name="dummy_text">Lets build a better community and collect amazing rewards for your contribution at the same time</string>
+    <string name="please_wait">Please wait...</string>
+
+    <!-- login activity -->
+    <string name="text_email_address">Email</string>
+    <string name="text_password">Password</string>
+    <string name="text_sign_up">Sign-up</string>
+    <string name="text_or">Or sign-in using</string>
+    <string name="text_signin_facebook">Facebook</string>
+    <string name="text_signin_twitter">Twitter</string>
+    <string name="text_signin_google">Google</string>
+    <string name="text_alread_register">Already registered?</string>
+    <string name="text_not_registered">Not registered yet?</string>
+    <string name="text_click_here">click here</string>
+    <string name="text_sign_in">Sign in</string>
+    <string name="invalid_signing_email_or_password">Invalid email or password, please try again</string>
+    <string name="invalid_signing_general">Signing up failed, please try again</string>
+    <string name="signing_up_progress_title">Sign up</string>
+    <string name="signing_up_progress">Signing...</string>
+
+    <!-- registration -->
+    <string name="registration_phone_number">Enter your phone number below to get\nstarted:</string>
+    <string name="registration_pin_enter">Thanks! Did you get a SMS PIN?\nEnter it here:</string>
+    <string name="registration_pin_wrong_number">Entered a wrong number?</string>
+    <string name="registration_pin_wrong_number_tap_here">Tap Here</string>
+    <string name="registration_pin_no_sms">Didnt receive an SMS ?</string>
+    <string name="registration_call_receive_pin">Call to receive PIN</string>
+    <string name="registration_collect_information">Updating information...</string>
+
+    <!-- main activity -->
+    <string name="main_title">Reputation</string>
+
+    <!-- fragment -->
+    <string name="title_fragment_search">Search</string>
+    <string name="title_fragment_contribute">Contribute</string>
+    <string name="title_fragment_block">Block</string>
+    <string name="title_fragment_discover">Discover</string>
+    <string name="title_fragment_account">Account</string>
+
+    <!-- search number fragment -->
+    <string name="search_number_hint">Find</string>
+
+    <!-- notification -->
+    <string name="call_monitor_turn_off">Turn Off</string>
+    <string name="call_monitor_turn_on">Turn On</string>
+    <string name="call_monitor_notificatiion_status_on">Call monitor turned on</string>
+    <string name="call_monitor_notificatiion_status_off">Call monitor turned off</string>
+
+    <string name="fb_app_id">334768280039971</string>
+
+    <!-- block -->
+    <string name="block_add_new_list">Add new</string>
+    <string name="title_common_dialog_add_blacklist">Add Blacklist</string>
+
+    <!-- contribute dialog -->
+    <string name="submit_manual_foot_print">*Submitting reputation will earn 25 points</string>
+    <string name="dialog_next">NEXT</string>
+    <string name="dialog_skip">SKIP</string>
+    <string name="dialog_submit">SUBMIT</string>
+    <string name="dialog_title_number">Number</string>
+    <string name="dialog_title_name">Name</string>
+    <string name="dialog_title_note">Note</string>
+    <string name="dialog_title_category">Category</string>
+
+    <!-- contribute fragment -->
+    <string name="title_why_contribute">Why contribute ?</string>
+    <string name="title_common_dialog_submit_number">Submit Number</string>
+
+    <!-- incoming call card -->
+    <string name="searching_text">Searching...</string>
+    <string name="score_title">Reputasi score</string>
+
+    <string name="disclaimer">In order for Reputa.si to work, you need to consent to sharing your calls and SMS data with‎ us. Click agree to proceed otherwise uninstall this app to opt out.</string>
+    <string name="disclaimer_title">Disclaimer</string>
+    <string name="disclaimer_button_agree">Agree</string>
+    <string name="disclaimer_button_exit">Exit</string>
+</resources>

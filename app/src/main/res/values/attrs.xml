@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ReputasiFonts">
+        <attr name="fontType" format="enum">
+            <enum name="robotoLight" value="0" />
+            <enum name="robotoBlack" value="1" />
+            <enum name="robotoBold" value="2" />
+            <enum name="robotoItalic" value="3" />
+            <enum name="robotoMedium" value="4" />
+            <enum name="robotoRegular" value="5" />
+            <enum name="bebasNeue" value="6" />
+        </attr>
+    </declare-styleable>
+</resources>

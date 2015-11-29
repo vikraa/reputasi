@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:background="@drawable/selector_listview">
+
+    <!--android:background="@android:color/black"-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <com.reputasi.callblocker.view.custom.ReputasiTextView
+                android:id="@+id/tv_phone_number"
+                android:text="1234567"
+                android:textSize="@dimen/row_textsize"
+                android:textColor="@color/white"
+                custom:fontType="robotoBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.reputasi.callblocker.view.custom.ReputasiTextView
+                android:id="@+id/tv_phone_info"
+                android:text="info"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="@dimen/row_textsize"
+                android:textColor="@color/white"
+                custom:fontType="robotoRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/iv_thumbs_up"
+                android:src="@drawable/selector_thumb_up"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/iv_thumbs_down"
+                android:src="@drawable/selector_thumb_down"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

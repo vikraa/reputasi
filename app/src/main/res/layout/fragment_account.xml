@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_tab_indicator"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <RelativeLayout
+            android:id="@+id/rl_tab_1"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="TAB 1"
+                android:id="@+id/tab_title_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <View
+                android:id="@+id/vw_indicator_selected_1"
+                android:layout_alignParentBottom="true"
+                android:background="#FFFFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:visibility="gone"/>
+            <View
+                android:id="@+id/vw_indicator_normal_1"
+                android:layout_alignParentBottom="true"
+                android:background="#FFFFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+        </RelativeLayout>
+        <View
+            android:background="#FFFFFFFF"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"/>
+        <RelativeLayout
+            android:id="@+id/rl_tab_2"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:text="TAB 2"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/tab_title_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <View
+                android:id="@+id/vw_indicator_selected_2"
+                android:layout_alignParentBottom="true"
+                android:background="#FFFFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:visibility="gone"/>
+            <View
+                android:id="@+id/vw_indicator_normal_2"
+                android:layout_alignParentBottom="true"
+                android:background="#FFFFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.reputasi.callblocker.view.custom.ReputasiViewPager
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ActionbarTabs" >
+
+    </com.reputasi.callblocker.view.custom.ReputasiViewPager>
+
+</LinearLayout>

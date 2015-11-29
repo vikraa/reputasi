@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="tab_normal">@android:color/holo_blue_light</color>
+    <color name="tab_pressed">@android:color/holo_blue_dark</color>
+-->
+    <!--<color name="tab_selected">#FFFFFFFF</color>
+    <color name="tab_unselected">#FFFFFFFF</color>-->
+    <color name="transparant_color">#00000000</color>
+    <color name="indicator_selected">#FFFE7709</color>
+    <color name="indicator_normal">#7FCCCCCC</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="button_signup_color">#FFFE7709</color>
+    <color name="popup_option_bg_color">#FF7FAAFF</color>
+    <color name="selected_item_color">#7FFE7709</color>
+    <color name="default_item_color">@android:color/transparent</color>
+    <color name="default_item_popup_color">#FF7FAAFF</color>
+    <color name="selected_item_popup_color">#7FFE7709</color>
+    <color name="bg_incoming_call">#FF8d1dff</color>
+    <color name="incoming_call_text">#FF1dff22</color>
+
+    <color name="incoming_call_green">#12a900</color>
+    <color name="incoming_call_red">#cf2a22</color>
+    <color name="incoming_call_gray">#b3b3b3</color>
+
+    <color name="incoming_call_caller_name">#555555</color>
+    <color name="incoming_call_caller_category">#adadad</color>
+    <color name="incoming_call_caller_number">#adadad</color>
+
+</resources>

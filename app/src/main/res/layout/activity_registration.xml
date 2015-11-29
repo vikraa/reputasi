@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@drawable/arrow_left"
+            android:background="@null"
+            android:id="@+id/btn_prev"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Prev"
+            android:textColor="@color/white"/>
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/logo_small"
+            android:layout_width="0dp"
+            android:padding="2dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:layout_marginRight="5dp"
+            android:drawableRight="@drawable/arrow_right"
+            android:background="@null"
+            android:id="@+id/btn_next"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <com.reputasi.callblocker.view.custom.ReputasiViewPager
+        android:id="@+id/fragment_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

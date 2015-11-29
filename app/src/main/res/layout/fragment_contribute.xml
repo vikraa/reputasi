@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@null">
+
+    <LinearLayout
+        android:paddingLeft="@dimen/contribute_frame_spacing"
+        android:paddingRight="@dimen/contribute_frame_spacing"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/contribute_icon_frame_spacing"
+            android:weightSum="2">
+            <ImageView
+                android:src="@drawable/img1"
+                android:id="@+id/iv_contribute"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <com.reputasi.callblocker.view.custom.ReputasiTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_contribute_info_title"
+                    custom:fontType="robotoBold"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:text="@string/title_why_contribute"/>
+                <com.reputasi.callblocker.view.custom.ReputasiTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/tv_contribute_info"
+                    custom:fontType="robotoRegular"
+                    android:textSize="@dimen/description_contribute_textsize"
+                    android:textColor="@color/white"
+                    android:text="@string/dummy_text"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_input_login">
+            <include
+                android:id="@+id/row_submit_number"
+                layout="@layout/row_screen"/>
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/sparator_spacing_left"
+                android:layout_marginRight="@dimen/sparator_spacing_right"
+                android:background="@color/indicator_normal"/>
+            <include
+                android:id="@+id/row_submit_recent_call"
+                layout="@layout/row_screen"/>
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/sparator_spacing_left"
+                android:layout_marginRight="@dimen/sparator_spacing_right"
+                android:background="@color/indicator_normal"/>
+            <include
+                android:id="@+id/row_submit_phonebook"
+                layout="@layout/row_screen"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
